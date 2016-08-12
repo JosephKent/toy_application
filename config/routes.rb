@@ -1,6 +1,10 @@
 ToyApplication::Application.routes.draw do
-  root 'application#hello'
+  resources :microposts
+
+  #root 'application#hello'
+  root 'users#index'
   resources :users
+  resources :microposts
 
 
   # The priority is based upon order of creation: first created -> highest priority.
